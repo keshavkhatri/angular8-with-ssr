@@ -81,16 +81,16 @@ Have a look at your angular.json located at the root of your project and replace
 
 Above given command will install all the required packages to start with Dynamic SSR. You will see something like the below given output in command line.
 
-> installed packages for tooling via npm.
-CREATE src/main.server.ts (220 bytes)
-CREATE src/app/app.server.module.ts (427 bytes)
-CREATE src/tsconfig.server.json (219 bytes)
-CREATE webpack.server.config.js (1360 bytes)
-CREATE server.ts (1472 bytes)
-UPDATE package.json (1872 bytes)
-UPDATE angular.json (4491 bytes)
-UPDATE src/main.ts (432 bytes)
-UPDATE src/app/app.module.ts (438 bytes)
+> installed packages for tooling via npm. <br />
+CREATE src/main.server.ts (220 bytes) <br />
+CREATE src/app/app.server.module.ts (427 bytes) <br />
+CREATE src/tsconfig.server.json (219 bytes) <br />
+CREATE webpack.server.config.js (1360 bytes) <br />
+CREATE server.ts (1472 bytes) <br />
+UPDATE package.json (1872 bytes) <br />
+UPDATE angular.json (4491 bytes) <br />
+UPDATE src/main.ts (432 bytes) <br />
+UPDATE src/app/app.module.ts (438 bytes) <br />
 
 As you can see in the above output, there are several files created and also updated.
 
@@ -112,19 +112,19 @@ By default prerender scripts were not added in the _package.json_ neither the fi
 
 You will see something like the below given output in you command line.
 
-> Installed packages for tooling via npm.
-CREATE local.js (215 bytes)
-CREATE prerender.ts (9079 bytes)
-CREATE static.js (165 bytes)
-CREATE static.paths.ts (70 bytes)
-CREATE src/app/app.browser.module.ts (473 bytes)
-CREATE ng-toolkit.json (496 bytes)
-UPDATE server.ts (1346 bytes)
-UPDATE package.json (2150 bytes)
-UPDATE src/app/app.server.module.ts (485 bytes)
-UPDATE src/app/app.module.ts (759 bytes)
-UPDATE src/main.ts (500 bytes)
-UPDATE webpack.server.config.js (1419 bytes)
+> Installed packages for tooling via npm. <br />
+CREATE local.js (215 bytes) <br />
+CREATE prerender.ts (9079 bytes) <br />
+CREATE static.js (165 bytes)<br />
+CREATE static.paths.ts (70 bytes) <br />
+CREATE src/app/app.browser.module.ts (473 bytes) <br />
+CREATE ng-toolkit.json (496 bytes) <br />
+UPDATE server.ts (1346 bytes) <br />
+UPDATE package.json (2150 bytes) <br />
+UPDATE src/app/app.server.module.ts (485 bytes) <br />
+UPDATE src/app/app.module.ts (759 bytes) <br />
+UPDATE src/main.ts (500 bytes) <br />
+UPDATE webpack.server.config.js (1419 bytes) <br />
 
 After executing this you should have all setup with static prerender now you need to run below given command to see the magic happens.
 
