@@ -1,5 +1,15 @@
 **Table of Contents**
 
+1. [Setup](https://github.com/keshavkhatri/angular8-with-ssr#setup "Setup")
+2. [What is Angular Universal ?](https://github.com/keshavkhatri/angular8-with-ssr#what-is-angular-universal)
+3. [Why we need SSR?](https://github.com/keshavkhatri/angular8-with-ssr#why-we-need-ssr)
+4. [Types of Angular Universal and which one to use](https://github.com/keshavkhatri/angular8-with-ssr#types-of-angular-universal-and-which-one-to-use)
+	- [Dynamic SSR](https://github.com/keshavkhatri/angular8-with-ssr#dynamic-ssr)
+	- [Static Prerendering](https://github.com/keshavkhatri/angular8-with-ssr#static-prerendering)
+5. [Implementing Angular Universal](https://github.com/keshavkhatri/angular8-with-ssr#implementing-angular-universal)
+6. [Conclusion](https://github.com/keshavkhatri/angular8-with-ssr#conclusion)
+
+
 ## Setup
 
 I have created this repo as an example of how to implement Angular Universal in an existing project.
