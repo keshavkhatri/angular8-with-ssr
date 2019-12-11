@@ -1,0 +1,24 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="text-center" *ngIf="loading">
+        <img class="img-fluid" src="/assets/loader-image-gif-6.gif">
+    </div>
+    <div class="row" *ngIf="!loading">
+        <div class="card mt-4">
+            <div class="card-header text-center">
+                <a class="btn btn-outline-primary float-left" [routerLink]="['/update',emp.id]">Edit</a>
+                Employee Details
+                <a class="btn btn-outline-primary float-right" (click)="delete()">Delete</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Name: {{emp?.employee_name}}</h5>
+                <h6>Employee ID: {{emp?.id}}</h6>
+                <h6>Age: {{emp?.employee_age}}</h6>
+                <h6>Salary: {{emp?.employee_salary}}</h6>
+            </div>
+            <div class="card-footer text-center">
+                Updated: {{today | date}}
+            </div>
+        </div>
+    </div>
+</div>

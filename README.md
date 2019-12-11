@@ -1,1 +1,1 @@
-# angular8-with-ssr
+# angular8-tutorial

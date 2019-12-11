@@ -1,0 +1,44 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="text-center" *ngIf="loading">
+        <img class="img-fluid" src="/assets/loader-image-gif-6.gif">
+    </div>
+    <div class="row">
+        <div class="card mt-4">
+            <div class="card-header text-center">
+                Add new employee
+            </div>
+            <div class="card-body">
+                <form [formGroup]="empForm" (ngSubmit)="submit()">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" [ngClass]="{'is-invalid': empForm.get('name').errors && submitted}" formControlName="name" placeholder="Name">
+                        <div class="invalid-feedback">Name is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" [ngClass]="{'is-invalid': empForm.get('age').errors && submitted}" formControlName="age" placeholder="Age">
+                        <div class="invalid-feedback">Age is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="salary">Salary</label>
+                        <input type="number" class="form-control" [ngClass]="{'is-invalid': empForm.get('salary').errors && submitted}" formControlName="salary" placeholder="Salary">
+                        <div class="invalid-feedback">Salary is required</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Success</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Employee created successfully
+    </div>
+</ng-template>
