@@ -1,3 +1,8 @@
+<!--
+  Title: What is angular SSR and how to imeplement it.
+  Description: This repo helps you to learn about angular ssr or universal.
+  Author: Keshav Khatri
+  -->
 **Table of Contents**
 
 1. [What is Angular Universal ?](https://github.com/keshavkhatri/angular8-with-ssr#what-is-angular-universal)
