@@ -1,33 +1,13 @@
 **Table of Contents**
 
-1. [Setup](https://github.com/keshavkhatri/angular8-with-ssr#setup "Setup")
-2. [What is Angular Universal ?](https://github.com/keshavkhatri/angular8-with-ssr#what-is-angular-universal)
-3. [Why we need SSR?](https://github.com/keshavkhatri/angular8-with-ssr#why-we-need-ssr)
-4. [Types of Angular Universal and which one to use](https://github.com/keshavkhatri/angular8-with-ssr#types-of-angular-universal-and-which-one-to-use)
+1. [What is Angular Universal ?](https://github.com/keshavkhatri/angular8-with-ssr#what-is-angular-universal)
+2. [Why we need SSR?](https://github.com/keshavkhatri/angular8-with-ssr#why-we-need-ssr)
+3. [Types of Angular Universal and which one to use](https://github.com/keshavkhatri/angular8-with-ssr#types-of-angular-universal-and-which-one-to-use)
 	- [Dynamic SSR](https://github.com/keshavkhatri/angular8-with-ssr#dynamic-ssr)
 	- [Static Prerendering](https://github.com/keshavkhatri/angular8-with-ssr#static-prerendering)
-5. [Implementing Angular Universal](https://github.com/keshavkhatri/angular8-with-ssr#implementing-angular-universal)
-6. [Conclusion](https://github.com/keshavkhatri/angular8-with-ssr#conclusion)
-
-
-## Setup
-
-I have created this repo as an example of how to implement Angular Universal in an existing project.
-To get this setup running on your local machine download or clone this project in your working directory.
-Then run below comand to install its dependencies.
-
-> npm install
-
-You can serve this app using below commands
-
-For normal serve
-> ng serve
-
-For Dynamic SSR
-> npm run build:ssr && npm run serve:ssr
-
-For Static Prerender
-> npm run build:prerender && npm run serve:prerender
+4. [Implementing Angular Universal](https://github.com/keshavkhatri/angular8-with-ssr#implementing-angular-universal)
+5. [Conclusion](https://github.com/keshavkhatri/angular8-with-ssr#conclusion)
+6. [Setup](https://github.com/keshavkhatri/angular8-with-ssr#setup "Setup")
 
 ### What is angular universal?
 
@@ -135,3 +115,22 @@ All that magic thanks to the prerender.ts script, which fires Angular Universal,
 #### Conclusion
 
 Depending on which form or angular universal you have used you will see the output on the browser. You can verify it using CTRL + U to see the source of the page or you can use curl in your command line to see the output of the webpage.
+
+## Setup
+
+I have created this repo as an example of how to implement Angular Universal in an existing project.
+To get this setup running on your local machine download or clone this project in your working directory.
+Then run below comand to install its dependencies.
+
+> npm install
+
+You can serve this app using below commands
+
+For normal serve
+> ng serve
+
+For Dynamic SSR
+> npm run build:ssr && npm run serve:ssr
+
+For Static Prerender
+> npm run build:prerender && npm run serve:prerender
